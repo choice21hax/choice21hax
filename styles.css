@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #f4f4f4;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background: #111;
+    opacity: 1; /* Changed from 0 to ensure content is visible */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 3px solid gold;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+header h1 {
+    font-size: 48px;
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header .subtitle {
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+header .game-name {
+    font-size: 30px;
+    color: gold;
+    font-weight: bold;
+    letter-spacing: 3px;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    z-index: 1; /* Ensure sections appear above particles */
+    position: relative;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    font-size: 36px;
+    color: gold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: gold;
+    display: block;
+    margin: 20px auto 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.project {
+    background-color: #222;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-left: 4px solid gold;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    color: gold;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+    color: #ccc;
+    border-top: 3px solid gold;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gradient Popup */
+.gradient-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.gradient-popup h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.gradient-popup p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@keyframes gradientPopup {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style the particles container */
+#tsparticles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Remove the old background-object styles */
+.background-object {
+    display: none;
+}
+
+/* Floating Navigation */
+.floating-nav {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 15px 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.floating-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-nav li {
+    margin: 20px 0;
+    position: relative;
+}
+
+.floating-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.floating-nav a:hover {
+    color: gold;
+    transform: scale(1.2);
+}
+
+/* Tooltip styles */
+.floating-nav a::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.floating-nav a:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Active state for nav items */
+.floating-nav a.active {
+    color: gold;
+}
+
+/* Make floating nav responsive */
+@media (max-width: 768px) {
+    .floating-nav {
+        left: 10px;
+        padding: 10px 5px;
+    }
+    
+    .floating-nav a {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Add at the top of your existing styles */
+#mouseTrailCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Ensure other interactive elements are above the canvas */
+button, a, input {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add this to your existing styles */
+.contact-info {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-info strong {
+    color: gold;
+    margin-right: 10px;
+}
