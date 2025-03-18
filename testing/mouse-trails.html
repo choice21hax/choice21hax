@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Trails Test</title>
+    <link rel="stylesheet" href="mouse-trails.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="particleCount">Particles:</label>
+            <input type="range" id="particleCount" min="5" max="50" value="20">
+        </div>
+        <div class="control-group">
+            <label for="particleSize">Size:</label>
+            <input type="range" id="particleSize" min="2" max="20" value="8">
+        </div>
+        <div class="control-group">
+            <label for="trailLength">Trail Length:</label>
+            <input type="range" id="trailLength" min="5" max="50" value="20">
+        </div>
+        <div class="control-group">
+            <button onclick="toggleGlow()">Toggle Glow</button>
+            <button onclick="changeColor()">Change Color</button>
+        </div>
+    </div>
+
+    <script src="mouse-trails.js"></script>
+</body>
+</html> 

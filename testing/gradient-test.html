@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Animation Test</title>
+    <link rel="stylesheet" href="gradient-style.css">
+</head>
+<body>
+    <div class="gradient-background"></div>
+    
+    <!-- Test content -->
+    <div class="content">
+        <h1>Gradient Background Test</h1>
+        <p>Testing different gradient animations and interactions</p>
+    </div>
+
+    <!-- Mouse position indicator -->
+    <div class="mouse-position"></div>
+
+    <div class="controls">
+        <button onclick="toggleAnimation()">Toggle Animation</button>
+        <button onclick="changeColors()">Change Colors</button>
+        <div class="speed-control">
+            <label for="speed">Animation Speed:</label>
+            <input type="range" id="speed" min="1" max="20" value="10">
+        </div>
+    </div>
+
+    <script src="gradient-script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Testing Area</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: gold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .test-links {
+            display: grid;
+            gap: 15px;
+        }
+
+        .test-link {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .test-link:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .test-link h3 {
+            color: gold;
+            margin-bottom: 5px;
+        }
+
+        .test-link p {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: gold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .back-link:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← Back to Portfolio</a>
+    
+    <div class="container">
+        <h1>Portfolio Testing Area</h1>
+        <div class="test-links">
+            <a href="gradient-test.html" class="test-link">
+                <h3>Gradient Background Test</h3>
+                <p>Testing different gradient animations and interactions</p>
+            </a>
+            
+            <a href="mouse-trails.html" class="test-link">
+                <h3>Mouse Trails Test</h3>
+                <p>Interactive particle effects following mouse movement</p>
+            </a>
+            
+            <a href="particles-test.html" class="test-link">
+                <h3>Particles Test N</h3>
+                <p>Testing different particle configurations and interactions</p>
+            </a>
+            
+            <a href="animation-test.html" class="test-link">
+                <h3>Animation Test N</h3>
+                <p>Testing various scroll and interaction animations</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
