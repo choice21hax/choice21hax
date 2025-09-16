@@ -1,12 +1,8 @@
-- 👋 Hi, I’m @choice21hax you can call me Choice
-- 👀 I’m interested in Gaming / Coding / Game Dev
-- 🌱 I’m currently learning at Grayson Highschool, I am a backends developer and I am learning to do full-stack aka front end.
-- 💞️ I’m looking to collaborate on anything! if you need anything contact me!
-- 📫 How to reach me Discord: choice21 / email: choice21yt@proton.me / Youtube: @Subtochoice ┃
-- 😄 Pronouns: He / Him
-- ⚡ Fun fact: I started developing at 8 years old. (it was a bit skidish)
-- 🎮 Favorite Game: Minecraft / FiveM / GTA V ┃
-<!---
-choice21hax/choice21hax is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# Yo, i'm choice!
+## Currently working on Grim Network!
+
+[![Website](https://img.shields.io/badge/Blog-444444)](https://www.tbxark.com)
+[![Twitter](https://img.shields.io/badge/Twitter-1190df)](https://twitter.com/choice21onyt)
+[![Github](https://img.shields.io/github/followers/choice21hax?label=Follow&style=social)](https://github.com/choice21hax)
+
+> Contact me via discord: choice21
